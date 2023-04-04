@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:700&display=swap&subset=arabic" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Scoreboard</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <div class="scoreboard-header">
+                    
+                    
+
+
+
+                     <p></p>
+                </div>
+
+                <div class="scoreboard-info">
+                    <div class="scoreboard-info-header">
+                        <div id="info-tab-label"><p>ROBBERY</p></div>
+                        <div id="status-tab-label"><p>STATUS</p></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="storerobbery" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🛒 | STORE ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="atmrobbery" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏧 | ATM ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="banktruck" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏠 | BANKTRUCK ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="houserobbery" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏠 | HOUSE ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="jewellery" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>💎 | VANGELICO HEIST:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Fleeca" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏦 | FLEECA ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Paleto" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏦 | POLETO ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Pacific" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🏦 | PACIFIC ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+				</div>
+				
+				<div class="scoreboard-info1">
+                    <div class="scoreboard-info-header">
+					<div id="info-tab-label"><p>JOBS</p></div>
+                    <div id="status-tab-label"><p>STATUS</p></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="emsonline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🩺 | EMS ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-ems"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="policeonline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>👮 | LSPD ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-cops"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="sasponline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🕵 | SASP ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-sasp"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="saspronline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>💂 | SASPR ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-saspr"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="bcsoonline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>👨‍✈‍ | BCSO ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-bcso"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="mechanic1online" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>👨‍🔧 | HAYES ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-hayes"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="tuneronline" style="background: rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>🚙 | TUNER ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-tuner"></div>
+                    </div>
+					<div class="scoreboard-info-beam" style="background:  rgba(0, 0, 0, 0.39);">
+                        <div class="info-beam-title"><p>👦 | PLAYERS:</p></div>
+                        <div class="info-beam-status1" id="total-players"></div>
+						</div>
+				</div>
+				
+            </div>
+        </div>
+    </div>
+
+<!-------- " L Menu " player statistics -------->
+
+            <div class="g8dresma-block">
+                <div class="qb-header">
+                </div>
+                
+                <div class="stat-info">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam" style="background: linear-gradient(to right, #ffffff00, #ffffff00)">
+                        <div class="info-stat-title"><p>: SALARY</p></div>
+                        <div class="stat-beam-status" id="Payment"></div>
+                        <div class="info-stat-title"><p>: CASH AMOUNT</p></div>
+                        <div class="stat-beam-status" id="Cash"></div>
+                        <div class="info-stat-title"><p>: CURRENT JOB</p></div>
+                        <div class="stat-beam-status" id="job"></div>
+                    </div>
+                </div>
+                <div class="stat-info1">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam" style="background: linear-gradient(to right, #ffffff00, #ffffff00)">
+                        <div class="qb-eth">
+                            <img src="https://cdn.discordapp.com/attachments/899058652898549814/914914986445373451/96.gif" alt="qb-eth" class="qb-eth">
+                        </div>
+                        <div class="info-pointstat-title3"><p></p></div>
+                    </div>
+                </div>
+                <div class="stat-info2">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam2" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-pointstat-title"><p>INFORMATION</p></div>
+                        <div class="info-pointstat-title2"><p>EXP LVL</p></div>
+                        <div class="info-stat-title2"><p>: CRAFLING LVL</p></div>
+                        <div class="stat-beam-status2" id="total-crafts"></div>
+                        <div class="info-stat-title2"><p>: DRUGS LVL</p></div>
+                        <div class="stat-beam-status2" id="total-dealers"></div>
+                    </div>
+                </div>
+                <div class="stat-info3">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam3" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-stat-title3"><i class="fas fa-user-secret"></i></div>
+                        <div class="stat-beam-status3" id="total-admin"></div>
+                        <div class="info-stat-title3"><i class="fas fa-ambulance"></i></div>
+                        <div class="stat-beam-status3" id="total-ambs"></div>
+                    </div>
+                </div>
+                <div class="stat-info4">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam4" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-stat-title4"><i class="fas fa-car"></i></div>
+                        <div class="stat-beam-status4" id="total-card"></div>
+                        <div class="info-stat-title4"><i class="fas fa-balance-scale"></i></div>
+                        <div class="stat-beam-status4" id="total-judge"></div>
+                    </div>
+                </div>
+                <div class="stat-info5">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam5" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-stat-title5"><i class="fas fa-tools"></i></div>
+                        <div class="stat-beam-status5" id="total-mech"></div>
+                        <div class="info-stat-title5"><i class="fas fa-suitcase"></i></div>
+                        <div class="stat-beam-status5" id="total-law"></div>
+                    </div>
+                </div>
+                <div class="stat-info6">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam6" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-stat-title6"><i class="fas fa-taxi"></i></div>
+                        <div class="stat-beam-status6" id="total-taxi"></div>
+                        <div class="info-stat-title6"><i class="fas fa-truck"></i></div>
+                        <div class="stat-beam-status6" id="total-tow"></div>
+                    </div>
+                </div>
+                <div class="stat-info7">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam7" style="background: linear-gradient(to right, #00000000, #00000000)">
+                        <div class="info-stat-title7"><i class="fas fa-house-damage"></i></div>
+                        <div class="stat-beam-status7" id="total-rs"></div>
+                        <div class="info-stat-title7"><i class="fal fa-siren-on"></i></div>
+                        <div class="stat-beam-status7" id="total-hayes"></div>
+                    </div>
+                </div>
+                <div class="stat-info8">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam" style="background: linear-gradient(to right, #ffffff00, #ffffff00)">
+                        <div class="qb-line">
+                            <img src="https://cdn.discordapp.com/attachments/765748568216305734/814555788889686016/line.png" alt="qb-line" class="qb-line">
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-info8">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam" style="background: linear-gradient(to right, #ffffff00, #ffffff00)">
+                        <div class="qb-line2">
+                            <img src="https://cdn.discordapp.com/attachments/765748568216305734/814555788889686016/line.png" alt="qb-line2" class="qb-line2">
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-info9">
+                    <div class="qb-header">
+                    </div>
+                    <div class="scoreboard-stat-beam" style="background: linear-gradient(to right, #ffffff00, #ffffff00)">
+                        <div class="qb-line1">
+                            <img src="https://cdn.discordapp.com/attachments/765748568216305734/814557102403747877/line.png" alt="qb-line1" class="qb-line1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>		
+        <script src="./app.js"></script>
+    </body>
+</html>
