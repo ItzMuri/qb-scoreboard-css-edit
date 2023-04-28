@@ -23,7 +23,7 @@
 
 .scoreboard-header > p {
     font-weight: bold;
-    color: rgb(0, 131, 253);
+    color: white;
     padding: 1.8vh;
     font-family: 'Tajawal';
     font-size: 2.8vh;
@@ -57,7 +57,7 @@
 #info-tab-label {
     position: absolute;
     font-family: 'Tajawal';
-    color: rgb(0, 131, 253);
+    color: white;
     left: 1vh;
     font-weight: bold;
 }
@@ -65,7 +65,7 @@
 #status-tab-label {
     position: absolute;
     font-family: 'Tajawal';
-    color: rgb(0, 131, 253);
+    color: white;
     right: 3vh;
     font-weight: bold;
 }
@@ -75,7 +75,7 @@
     font-family: 'Tajawal', sans-serif;
     font-size: 1.2vh;
     font-weight: lighter;
-    color: rgb(0, 131, 253);
+    color: white;
     letter-spacing: 0.1vh;
     left: 1vh;
     line-height: 4.25vh;
@@ -85,7 +85,7 @@
     position: absolute;
     font-family: 'Tajawal';
     font-size: 1.6vh;
-    color: rgb(0, 131, 253);
+    color: white;
     right: 2vh;
     float: left;
     text-align: left;
@@ -96,7 +96,7 @@
     position: absolute;
     font-family: 'Tajawal';
     font-size: 1.6vh;
-    color: rgb(0, 131, 253);
+    color: white;
     right: 2vh;
     float: left;
     text-align: left;
