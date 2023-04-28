@@ -6,4 +6,5 @@ edit of https://github.com/LYCoreFramework/lY-scoreboard
 
 
 my edit
-![image](https://user-images.githubusercontent.com/88394932/229931731-1ffb8aa0-7d93-466b-883e-b0a7b2e4cb10.png)
+![image](https://user-images.githubusercontent.com/88394932/235263257-5ebe8d9f-c87e-4db2-abd6-a9d6efd53fc4.png)
+
