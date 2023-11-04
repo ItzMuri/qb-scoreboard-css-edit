@@ -44,7 +44,6 @@ Config.IllegalActions = {
 
 -- Current Cops Online
 Config.CurrentCops = 0
-
 Config.currentSasp = 0
 Config.currentSaspr = 0
 Config.currentBcso = 0

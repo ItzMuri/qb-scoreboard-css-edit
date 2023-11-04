@@ -111,6 +111,7 @@ RegisterKeyMapping('scoreboard', 'Open Scoreboard', 'keyboard', Config.OpenKey)
 
 -- Threads
 
+-- if you want to see player id uncommend this
 --[[CreateThread(function()
     while true do
         if scoreboardOpen then
