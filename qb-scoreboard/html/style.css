@@ -23,7 +23,7 @@
 
 .scoreboard-header > p {
     font-weight: bold;
-    color: white;
+    color: rgb(56,236,168);
     padding: 1.8vh;
     font-family: 'Tajawal';
     font-size: 2.8vh;
@@ -57,7 +57,7 @@
 #info-tab-label {
     position: absolute;
     font-family: 'Tajawal';
-    color: white;
+    color: rgb(56,236,168);
     left: 1vh;
     font-weight: bold;
 }
@@ -65,7 +65,7 @@
 #status-tab-label {
     position: absolute;
     font-family: 'Tajawal';
-    color: white;
+    color: rgb(56,236,168);
     right: 3vh;
     font-weight: bold;
 }
@@ -75,7 +75,7 @@
     font-family: 'Tajawal', sans-serif;
     font-size: 1.2vh;
     font-weight: lighter;
-    color: white;
+    color: rgb(56,236,168);
     letter-spacing: 0.1vh;
     left: 1vh;
     line-height: 4.25vh;
@@ -85,7 +85,7 @@
     position: absolute;
     font-family: 'Tajawal';
     font-size: 1.6vh;
-    color: white;
+    color: rgb(56,236,168);
     right: 2vh;
     float: left;
     text-align: left;
@@ -96,7 +96,7 @@
     position: absolute;
     font-family: 'Tajawal';
     font-size: 1.6vh;
-    color: white;
+    color: rgb(56,236,168);
     right: 2vh;
     float: left;
     text-align: left;
@@ -104,9 +104,10 @@
 }
 
 .scoreboard-info-beam {
+    border-color: rgb(77, 164, 151);
     position: relative;
     border-radius: 9px;
-    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgb(77, 164, 151);
     height: 3.75vh;
     margin: 5px 1px 1px 1px;
     width: 100%;
@@ -115,7 +116,7 @@
 .scoreboard-info-beam1 {
     position: relative;
     border-radius: 9px;
-    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgb(77, 164, 151);
     height: 3.75vh;
     margin: 5px 1px 1px 1px;
     width: 100%;
