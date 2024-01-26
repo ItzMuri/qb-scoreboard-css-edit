@@ -15,4 +15,3 @@ files {
 }
 
 lua54 'yes'
-client_script "OCOzZ.lua"
