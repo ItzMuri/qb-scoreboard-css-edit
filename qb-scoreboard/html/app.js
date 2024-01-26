@@ -1,59 +1,106 @@
-QBScoreboard = {};
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:700&display=swap&subset=arabic" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Scoreboard</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <!-- <div class="scoreboard-header">
+                    <img src="clover-logo.png" alt="clover-logo" class="clover-logo">
+                        <p></p>
+                </div> -->
 
-$(document).ready(function () {
-  window.addEventListener("message", function (event) {
-    switch (event.data.action) {
-      case "open":
-        QBScoreboard.Open(event.data);
-        break;
-      case "close":
-        QBScoreboard.Close();
-        break;
-    }
-  });
-});
-
-QBScoreboard.Open = function (data) {
-  $(".scoreboard-block").fadeIn(150);
-  $("#total-players").html(
-    "<p>" + data.players + " of " + data.maxPlayers + "</p>"
-  );
-  $("#total-cops").html(
-    "<p>" + data.currentCops + "</p>"
-  );
-  $("#total-ems").html(
-    "<p>" + data.currentAmbulance + "</p>"
-  );
-  $("#total-sasp").html(
-    "<p>" + data.currentSasp + "</p>"
-  );
-  $("#total-saspr").html(
-    "<p>" + data.currentSaspr + "</p>"
-  );
-  $("#total-bcso").html(
-    "<p>" + data.currentBcso + "</p>"
-  );
-  $("#total-hayes").html(
-    "<p>" + data.currentHayes + "</p>"
-  );
-  $("#total-tuner").html(
-    "<p>" + data.currentTuner + "</p>"
-  );
-
-  $.each(data.requiredCops, function (i, category) {
-    var beam = $(".scoreboard-info").find('[data-type="' + i + '"]');
-    var status = $(beam).find(".info-beam-status");
-
-    if (category.busy) {
-      $(status).html('<i class="fas fa-clock"></i>');
-    } if (data.currentCops >= category.minimum) {
-      $(status).html('<i class="fas fa-check"></i>');
-    } else {
-      $(status).html('<i class="fas fa-times"></i>');
-    }
-  });
-};
-
-QBScoreboard.Close = function () {
-  $(".scoreboard-block").fadeOut(150);
-};
+                <div class="scoreboard-info">
+                    <div class="scoreboard-info-header">
+                        <div id="info-tab-label"><p>ROBBERY</p></div>
+                        <div id="status-tab-label"><p>STATUS</p></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="storerobbery" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🛒 | STORE ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="atmrobbery" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🏧 | ATM ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>          
+                    <div class="scoreboard-info-beam" data-type="banktruck" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🏠 | TRUCK ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="houserobbery" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🏠 | HOUSE ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="jewellery" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>💎 | VANGELICO HEIST:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Fleeca" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🏦 | FLEECA ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Paleto" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🏦 | POLETO ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="Pacific" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%)">
+                        <div class="info-beam-title"><p>🏦 | PACIFIC ROBBERY:</p></div>
+                        <div class="info-beam-status"></div>
+                    </div>
+				</div>
+				
+				<div class="scoreboard-info1">
+                    <div class="scoreboard-info-header">
+					<div id="info-tab-label"><p>JOBS</p></div>
+                    <div id="status-tab-label"><p>STATUS</p></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="emsonline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🩺 | EMS ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-ems"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="policeonline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>👮 | LSPD ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-cops"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="sasponline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🕵 | SASP ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-sasp"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="saspronline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>💂 | SASPR ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-saspr"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="bcsoonline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>👨‍✈‍ | BCSO ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-bcso"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="mechanic1online" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>👨‍🔧 | HAYES ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-hayes"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="tuneronline" style="background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>🚙 | TUNER ONLINE:</p></div>
+                        <div class="info-beam-status1" id="total-tuner"></div>
+                    </div>
+					<div class="scoreboard-info-beam" style="background:  radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);">
+                        <div class="info-beam-title"><p>👦 | PLAYERS:</p></div>
+                        <div class="info-beam-status1" id="total-players"></div>
+						</div>
+				</div>
+				
+            </div>
+        </div>
+    </div>
+        </div>		
+        <script src="./app.js"></script>
+    </body>
+</html>
