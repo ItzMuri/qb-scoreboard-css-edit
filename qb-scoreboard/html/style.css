@@ -14,37 +14,41 @@
 .scoreboard-block {
     display: none;
     position: absolute;
-    height: 23.0vh;
-    width: 43vh;
-    border-radius: 8px;
+    height: 37.0vh;
+    width: 42vh;
+    border: 3px solid rgb(0, 255, 191);;
+    border-right: 3px;
+    border-radius: 18px;
+    background: linear-gradient(to right, rgb(43, 44, 54) 50%, rgba(133, 133, 133, 0) 10%, rgb(43, 44, 54) 50%);
     right: 5vh;
-    top: 10vh;
+    top: 22vh;
+    padding: 1;
 }
 
 .scoreboard-header > p {
     font-weight: bold;
-    color: rgb(56,236,168);
-    padding: 1.8vh;
+    color: rgb(0, 255, 191);
+    padding: 0vh;
     font-family: 'Tajawal';
-    font-size: 2.8vh;
+    font-size: 1.8vh;
 }
 
 .scoreboard-info {
     position: absolute;
-    height: 26.5vh;
-    width: 22vh;
-    top: 70%;
-	left: 51%;
+    height: 32.5vh;
+    width: 20vh;
+    top: 46%;
+	  left: 51%;
     transform: translateY(-50%);
     margin: 0 auto;
 }
 
 .scoreboard-info1 {
     position: absolute;
-    height: 26.5vh;
+    height: 32.5vh;
     width: 20vh;
-    top: 70%;
-	left: 2%;
+    top: 46%;
+	left: 1.3%;
     transform: translateY(-50%);
     margin: 0 auto;
 }
@@ -104,10 +108,9 @@
 }
 
 .scoreboard-info-beam {
-    border-color: rgb(77, 164, 151);
     position: relative;
-    border-radius: 9px;
-    box-shadow: 0px 0px 3px rgb(77, 164, 151);
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgb(56,236,168);
     height: 3.75vh;
     margin: 5px 1px 1px 1px;
     width: 100%;
@@ -115,8 +118,8 @@
 
 .scoreboard-info-beam1 {
     position: relative;
-    border-radius: 9px;
-    box-shadow: 0px 0px 3px rgb(77, 164, 151);
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgb(56,236,168);
     height: 3.75vh;
     margin: 5px 1px 1px 1px;
     width: 100%;
@@ -141,378 +144,8 @@
 
 .clover-logo {
   position: absolute;
-  margin-left: 11%;
-  margin-top: -18%;
+  margin-left: 33%;
+  margin-top: -15%;
   height: 13.4vh;
-  width: auto;
-}
-
-/* -------- " Z Menu " player statistics -------- */
-
-.g8dresma-block {
-  display: none;
-  position: absolute;
-  height: 6.6vh;
-  width: 63.8vh;
-  right: 32.02%;
-  bottom: 3.4%;
-  background-color: rgba(26, 26, 26, 0.688);
-  border-radius: 10px 10px 10px 10px;
-}
-
-.stat-info {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.2%;
-  transform: translateY(-50%);
-  left: 20.8%;
-}
-
-.stat-info1 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -617%;
-  transform: translateY(-50%);
-  left: 7.84%;
-}
-
-.stat-info2 {
-  position: absolute;
-  height: 32vh;
-  width: 14vh;
-  bottom: -650.2%;
-  transform: translateY(-50%);
-  left: 48.88%;
-  margin: 0 auto;
-}
-
-.stat-info3 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.8%;
-  transform: translateY(-50%);
-  left: 90.4%;
-  margin: 0 auto;
-}
-
-.stat-info4 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.8%;
-  transform: translateY(-50%);
-  left: 86.4%;
-  margin: 0 auto;
-}
-
-.stat-info5 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.8%;
-  transform: translateY(-50%);
-  left: 82.4%;
-  margin: 0 auto;
-}
-
-.stat-info6 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.8%;
-  transform: translateY(-50%);
-  left: 78.4%;
-  margin: 0 auto;
-}
-
-.stat-info7 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -650.8%;
-  transform: translateY(-50%);
-  left: 74.48%;
-  margin: 0 auto;
-}
-
-.stat-info8 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -617%;
-  transform: translateY(-50%);
-  left: 36%;
-}
-
-.stat-info9 {
-  position: absolute;
-  height: 32vh;
-  width: 26vh;
-  bottom: -617%;
-  transform: translateY(-50%);
-  left: 64.08%;
-}
-
-.scoreboard-stat-beam {
-  height: 7vh;
-  width: 14.4vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam2 {
-  height: 7vh;
-  width: 14.4vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam3 {
-  height: 6vh;
-  width: 6vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam4 {
-  height: 6vh;
-  width: 6vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam5 {
-  height: 6vh;
-  width: 6vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam6 {
-  height: 6vh;
-  width: 6vh;
-  border-radius: 15px;
-}
-
-.scoreboard-stat-beam7 {
-  height: 6vh;
-  width: 6vh;
-  border-radius: 15px;
-}
-
-.info-stat-title {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: right;
-  margin-top: -2%;
-}
-
-.info-stat-title2 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: right;
-  margin-top: -2%;
-}
-
-.info-stat-title3 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-stat-titlepj {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1.5vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-stat-title4 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-stat-title5 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-stat-title6 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-stat-title7 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: -4.4%;
-}
-
-.info-pointstat-title {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(206, 206, 206);
-  text-align: right;
-  margin-bottom: -6.88%;
-}
-
-.info-pointstat-title2 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  color: rgb(206, 206, 206);
-  text-align: left;
-  margin-bottom: 4.48%;
-}
-
-.info-pointstat-title3 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 0.88vh;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  font-style: italic;
-  top: 34%;
-  left: -19%;
-}
-
-.stat-beam-status {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: left;
-  font-size: 1vh;
-  top: -0.6vh;
-  margin-top: -2%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status1 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  font-size: 1vh;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  top: 58%;
-  left: -18%;
-}
-
-.stat-beam-status2 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: left;
-  font-size: 1vh;
-  top: -0.76vh;
-  margin-top: -1.4%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status3 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: center;
-  font-size: 1vh;
-  top: -1vh;
-  font-weight: bold;
-  margin-top: 22%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status4 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: center;
-  font-size: 1vh;
-  top: -1vh;
-  font-weight: bold;
-  margin-top: 22%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status5 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: center;
-  font-size: 1vh;
-  top: -1vh;
-  font-weight: bold;
-  margin-top: 22%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status6 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: center;
-  font-size: 1vh;
-  top: -1vh;
-  font-weight: bold;
-  margin-top: 22%;
-  color: rgb(244, 246, 207);
-}
-
-.stat-beam-status7 {
-  position: relative;
-  font-family: "Tajawal", sans-serif;
-  text-align: center;
-  font-size: 1vh;
-  top: -1vh;
-  font-weight: bold;
-  margin-top: 22%;
-  color: rgb(244, 246, 207);
-}
-
-.qb-eth {
-  position: absolute;
-  margin-left: -6%;
-  margin-top: 2%;
-  height: 6.4vh;
-  width: 6.4vh;
-
-}
-
-.qb-line {
-  position: absolute;
-  height: auto;
-  width: 8vh;
-  transition: translate(-50%, -50%);
-}
-
-.qb-line1 {
-  position: absolute;
-  height: auto;
-  width: 8vh;
-  transition: translate(-50%, -50%);
-}
-
-.qb-line2 {
-  position: absolute;
-  margin-left: -54%;
-  height: auto;
-  width: 8vh;
-  transition: translate(-50%, -50%);
+  width: 13.4vh;
 }
