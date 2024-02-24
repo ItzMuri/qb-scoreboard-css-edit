@@ -16,10 +16,10 @@
     position: absolute;
     height: 37.0vh;
     width: 42vh;
-    border: 3px solid rgb(0, 255, 191);;
+    border-top: thick double rgb(0, 255, 191);
     border-right: 3px;
     border-radius: 18px;
-    background: linear-gradient(to right, rgb(43, 44, 54) 50%, rgba(133, 133, 133, 0) 10%, rgb(43, 44, 54) 50%);
+    background: linear-gradient(to right, rgba(133,133,133,0) 30%, rgba(133, 133, 133, 0) 50%, rgb(43, 44, 54) 100%);
     right: 5vh;
     top: 22vh;
     padding: 1;
